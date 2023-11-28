@@ -129,10 +129,12 @@ body {
     padding: 0;
     margin: 0;
     display: flex; 
-    justify-content: center;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
 }
 
-.actions {
+.actions, .houses, .lastyear {
     width: 1250px;
     height: 500px;
     display: flex;
@@ -145,18 +147,160 @@ body {
     border: 1px solid black;
 }
 
-.actions h2 {
+ h2 {
     font-family: 'Gilroy-Light';
     font-size: 47px;
     color: #2d2d2f;
     text-align: center;
 }
 
-.actions h2 span {
+h2 span {
     font-family: 'Gilroy-Bold';
 }
 
-.wraper {
+.houses {
+    height: 800px;
+}
+
+.houses__wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    height: 550px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 550px;
+}
+
+.container__house-small, .container__house-big {
+    display: flex;
+    justify-content: space-around;
+    width: 348px;
+    height: 161px;
+    margin: 10px 0;
+}
+
+.container__house-small {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container__house-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__house-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.container__house-big {
+    height: 351px;
+    flex-direction: column;
+    background-image: url('../img/House11.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+
+.image__s1, .image__s2, .image__s3, .image__s4, .image__s5 {
+    background-image: url('../img/House12.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.image__s2 {
+    background-image: url('../img/house13.png');
+}
+
+.image__s3 {
+    background-image: url('../img/House14.png');
+}
+
+.image__s4 {
+    background-image: url('../img/House15.png');
+}
+
+.image__s5 {
+    background-image: url('../img/House16.png');
+}
+
+.container__house-small h3 {
+    display: block;
+    width: 135px;
+    font-family: 'Gilroy-Bold';
+    font-size: 23px;
+    color: white;
+    text-align: left;
+}
+
+.container__house-big h3 {
+    display: block;
+    width: 157px;
+    font-family: 'Gilroy-Bold';
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}
+
+.lookproj__big, .lookproj__small {
+    display: block;
+    width: 159px;
+    height: 40px;
+    font-family: 'Gilroy-Bold';
+    font-size: 10px;
+    color: #fcfcfe;
+    background-color: #73B918;
+    border-radius: 5px;
+}
+
+.lookproj__small {
+    width: 132px;
+    height: 34px;
+}
+
+.hproj {
+    display: block;
+    width: 76px;
+    height: 13px;
+    padding: 5px;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 9px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 13px;
+    margin-top: 35px;
+}
+
+.price__big, .price__small {
+    display: block;
+    font-family: 'Gilroy-Regular';
+    font-size: 13px;
+    color: white;
+}
+
+.price__big span {
+    font-family: 'Gilroy-Bold';
+    font-size: 30px
+}
+
+.price__small span {
+    font-family: 'Gilroy-Bold';
+    font-size: 24px
+}
+
+.actions__wraper {
     display: flex;
     justify-content: space-between;
 }
@@ -238,4 +382,9 @@ body {
     height: 9px;
     background-color: #F3AB3C;
     border-radius: 5px;
+}
+
+.lastyear {
+    height: 800px;
+    margin-top: 20px;
 }
