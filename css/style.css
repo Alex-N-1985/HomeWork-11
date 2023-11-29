@@ -129,15 +129,15 @@ body {
     padding: 0;
     margin: 0;
     display: flex; 
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: column;   
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .actions, .houses, .lastyear {
-    width: 1250px;
-    height: 500px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -155,14 +155,15 @@ h2 span {
 }
 
 .houses {
-    height: 800px;
+    height: auto;
 }
 
 .houses__wraper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 1200px;
+    flex-wrap: wrap;
+    width: 90vw;
     height: 550px;
 }
 
@@ -299,13 +300,14 @@ h2 span {
 .actions__wraper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .action {
     display: block;
     justify-content: flex-start;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around;    
     margin: 20px;
     width: 534px;
     height: 296px;
@@ -541,4 +543,20 @@ h2 span {
     font-family: 'Gilroy-Bold';
     font-size: 13px;
     color: #FCFCFE;
+}
+
+
+@media screen and (max-width: 575) {
+    
+    .houses {
+        width: 95vw;
+        height: auto;
+    }
+
+    h2 {
+        width: 90vh;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
