@@ -385,6 +385,164 @@ h2 span {
 }
 
 .lastyear {
-    height: 800px;
+    height: 650px;
     margin-top: 20px;
+}
+
+.housedatas {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 460px;
+}
+
+.housedatas__photos, .housedatas__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 450px;
+}
+
+.housedatas__data {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.housedatas__photos-big {
+    display: block;
+    width: 535px;
+    height: 346px;
+    border-top-left-radius: 85px;
+    margin-top: 10px;
+}
+
+.housedatas__photos-small {
+    display: block;
+    width: 125px;
+    height: 80px;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+
+.housedatas__data h3{
+    font-family: 'Gilroy-SemiBold';
+    font-size: 36px;
+    color: #4c4f56;
+    width: 391px;
+    height: 74px;
+    margin-left: 20px;
+}
+
+.housedatas__data-mapmarker {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;    
+}
+
+.housedatas__data-mapmarker img {
+    display: block;
+    width: 17px;
+    height: 19px;
+}
+
+.housedatas__data-mapmarker a {
+    display: block;
+    margin-left: 10px;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    color: #85B73E;    
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.housedatas__data-builddata {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: 'Gilroy-Regular';
+    font-size: 12px;
+    color: #8E9093;
+}
+
+.housedatas__data-builddata li {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.housedatas__data-builddata .price__list {
+    font-family: 'Gilroy-Bold';
+    font-size: 28px;
+    color: #434749;
+}
+
+.housedatas__data-builddata .units__measurement {
+    font-size: 16px;
+    color: #434749;
+}
+
+.housedatas__data-projdata {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 500px;
+    height: 70px;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    color: #56595F;
+}
+
+.housedatas__data-projdata li span {
+    font-family: 'Gilroy-SemiBold';
+}
+
+.housedatas__data-calcproj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.housedatas__data-calcproj p {
+    display: block;
+    width: 265px;
+    height: 40px;
+    margin-right: 5px;
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    color: #56595f;
+}
+
+.housedatas__data p span {
+    font-family: 'Gilroy-Bold';
+}
+
+.housedatas__data-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #FEAA01;
+}
+
+.housedatas__data-button img {
+    display: block;
+    width: 25px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.housedatas__data-button p {
+    display: block;
+    width: 140px;
+    height: 18px;
+    font-family: 'Gilroy-Bold';
+    font-size: 13px;
+    color: #FCFCFE;
 }
