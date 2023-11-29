@@ -548,7 +548,7 @@ h2 span {
 
 @media screen and (max-width: 575) {
     
-    .houses {
+    .houses, .actions, .lastyear {
         width: 95vw;
         height: auto;
     }
