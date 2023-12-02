@@ -369,6 +369,7 @@ h2 span {
     height: 9px;
     padding: 0;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .point {
@@ -588,10 +589,55 @@ h2 span {
     }
 
     .housedatas {
-        width: 80vw;
+        width: 90vw;
         height: 1000px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .container:last-child {
+        width: 750px;
+        height: 400px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .container:last-child .container__house-small, .container:last-child .container__house-big {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    h2 {
+        width: 90vw;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .houses {
+        width: 95vw;
+        height: 2000px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .container:last-child {
+        width: 350px;
+        height: 550px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .container:last-child .container__house-small, .container:last-child .container__house-big {
+        margin: 10px 0;
+    }
+
+    .housedatas, .housedatas__data {
+        width: 90vw;
+        height: auto;
     }
 }
