@@ -128,10 +128,6 @@ body {
     font-size: 0;
     padding: 0;
     margin: 0;
-    
-}
-
-main {
     display: flex; 
     justify-content: flex-start;
     align-items: center;
@@ -139,9 +135,12 @@ main {
     flex-wrap: wrap;
 }
 
+.border {
+    border: 1px solid black
+}
+
 .actions, .houses, .lastyear {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -159,13 +158,14 @@ h2 span {
 }
 
 .houses {
-    height: auto;
+    width: 1100px;
+    height: 750px;
 }
 
 .houses__wraper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     width: 90vw;
     height: 550px;
@@ -177,6 +177,7 @@ h2 span {
     justify-content: center;
     width: 350px;
     height: 550px;
+    margin: 0 10px;
 }
 
 .container__house-small, .container__house-big {
@@ -389,6 +390,10 @@ h2 span {
 .lastyear {
     height: 650px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .housedatas {
@@ -550,17 +555,43 @@ h2 span {
 }
 
 
-@media screen and (max-width: 575) {
-    
-    .houses, .actions, .lastyear {
-        width: 95vw;
-        height: auto;
-    }
+@media screen and (max-width: 992px) {
 
     h2 {
-        width: 90vh;
+        width: 90vw;
         height: auto;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    
+    .houses {
+        width: 95vw;
+        height: 1350px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .actions {
+        width: 95vw;
+    }
+
+    .actions__wraper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lastyear {
+        width: 95vw;
+        height: 1200px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .housedatas {
+        width: 80vw;
+        height: 1000px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
